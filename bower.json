@@ -1,0 +1,22 @@
+{
+  "name": "officeparty",
+  "version": "0.0.0",
+  "authors": [
+    "Hattan Shobokshi <hattan@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.3.6",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.3.1",
+    "font-awesome": "~4.2.0"
+  }
+}
