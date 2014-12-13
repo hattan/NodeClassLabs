@@ -3,10 +3,6 @@ var routes = require('./routes/index');
 var videoRoutes = require('./routes/videos');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var flash = require('connect-flash');
-var initPassport = require('./passport/init');
-var expressSession = require('express-session');
-var passport = require('passport');
 
 var path = require('path');
 var config =require('./config.js');
@@ -14,11 +10,7 @@ var youtube = require('./youtube');
 var youTubeclient = new youtube.Client(config.youTube);
 
 var app = express();
-app.use(flash());
-initPassport(passport);
-app.use(expressSession({secret: 'mySecretKey'}));
-app.use(passport.initialize());
-app.use(passport.session());
+
 app.set('port', process.env.PORT || 6500);
 
 app.use(express.static(path.join(__dirname, 'public')));
