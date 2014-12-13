@@ -5,8 +5,8 @@ module.exports = {
 		maxResults : 10		
 	},
 	facebook : {
-		clientID: '',
-		clientSecret : '',
+		clientID: '1576762302539344',
+		clientSecret : 'e23387548135f5393321e99e3d41b825',
 		callbackURL : 'http://localhost:3000/auth/facebook/callback'
 	}
 }
